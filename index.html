@@ -12,6 +12,24 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
+		body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .image-container {
+            flex: 1;
+            padding: 10px;
+        }
+        .text-container {
+            flex: 1;
+            padding: 10px;
+            text-align: justify;
+        }
 
 		h1 {
 			font-size: 200%;
@@ -114,43 +132,48 @@
 <body>
 	<div class="center-justified" style="width:100%;"> 
 		<h1>Adversarial Policy Generation in Automated Parking</h1>
-		<h2>Alessandro Pighetti, Francesco Bellotti, Riccardo Berta, Andrea Cavallaro, Luca Lazzaroni, Changjae Oh</h2>
+		<h2 style="font-weight: 200;">Alessandro Pighetti, Francesco Bellotti, Riccardo Berta, Andrea Cavallaro, Luca Lazzaroni, Changjae Oh</h2>
 	</div>
 	<div class="center-justified">
-		<div style="overflow: auto;">
-			<img width=50% src="media/graph_abs.svg" alt="Graphical Abstract" style="float: right; margin: 0 0 10px 10px;">
-			<h3>Abstract</h3>
-			<p>
-				Automated driving (AD) systems require rigorous
-				testing to validate their robustness and safety in several different
-				operation conditions before real-world deployment. An
-				emerging technology for implementing decision-making (DM) in
-				AD is given by deep reinforcement learning (DRL). Adversarial
-				learning is a method employed to enhance DRL agents by
-				exposing them to critical situations created in simulations by
-				an adversarial agent. A straightforward solution is to train
-				the adversarial model through a reward function which is the
-				opposite of the AD agent one, in order to challenge the AD agent
-				as much as possible. But this solution is simplistic. Particularly,
-				when the AD agent reward function highly penalizes collisions,
-				which is obviously a common case, an adversarial agent would
-				be strongly motivated to crash against the AD vehicle, which
-				may hinder the training for lack of realism. We investigate this
-				issue in a automated parking (AP) application, in which we try
-				to distrupt a parking agent’s behavior through the interaction
-				with an adversarial agent exiting an adjacent parking slot—a
-				common yet under-explored challenge in simulation studies. In
-				this context we propose an adversary reward function that tries
-				to strike a balance between purely adversarial (i.e., disruptive to
-				the target system) and realistic behaviors, significantly reducing
-				collision rates by 25% and avoiding unrealistic maneuvers when
-				compared to a baseline adversarial approach.
-			</p>
+		<div class="container">
+			<div class="text-container">
+				<h2>Abstract</h1>
+				<p>
+					Automated driving (AD) systems require rigorous
+					testing to validate their robustness and safety in several dif-
+					ferent operation conditions before real-world deployment. An
+					emerging technology for implementing decision-making (DM) in
+					AD is given by deep reinforcement learning (DRL). Adversarial
+					learning is a method employed to enhance DRL agents by
+					exposing them to critical situations created in simulations by
+					an adversarial agent. A straightforward solution is to train
+					the adversarial model through a reward function which is the
+					opposite of the AD agent one, in order to challenge the AD agent
+					as much as possible. But this solution is simplistic. Particularly,
+					when the AD agent reward function highly penalizes collisions,
+					which is obviously a common case, an adversarial agent would
+					be strongly motivated to crash against the AD vehicle, which
+					may hinder the training for lack of realism. We investigate this
+					issue in a automated parking (AP) application, in which we try
+					to distrupt a parking agent’s behavior through the interaction
+					with an adversarial agent exiting an adjacent parking slot—a
+					common yet under-explored challenge in simulation studies. In
+					this context we propose an adversary reward function that tries
+					to strike a balance between purely adversarial (i.e., disruptive to
+					the target system) and realistic behaviors, significantly reducing
+					collision rates by 25% and avoiding unrealistic maneuvers when
+					compared to a baseline adversarial approach.
+				</p>
+			</div>
+			<div class="image-container">
+				<img src="media/graph_abs.svg" alt="Graphical Abstract" style="width:80%; height:auto;">
+			</div>
 		</div>
-			<br>
-			<br>
+		<br>
+		<br>
 		<h2 class="Tracking results" style="text-align: left;">Further results - Coming Soon</h2>	
-
+		<br>
+		<br>
 		<h2 style="text-align: left;">Contacts</h2>
 		<p>
 			If you have any further enquiries, question, or comments, please contact 
