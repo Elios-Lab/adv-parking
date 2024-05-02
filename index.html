@@ -1,9 +1,166 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> 
+<html lang="en">
 <head>
-    <title>Test page</title>
-</head>
+
+	<meta charset="UTF-8">
+	<title>Adversarial Policy Generation in Automated Parking</title> 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="layout.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+
+		h1 {
+			font-size: 200%;
+			text-align: center;
+		}
+
+		h2 {
+			font-size: 150%;
+			text-align: center;
+		}
+
+		h3 {
+			font-size: 100%;
+			text-align: center;
+		}
+
+		.center-justified {
+			text-align: justify;
+			margin: 0 auto;
+			width: 1000px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+	/* NAVIGATION */
+	nav {
+		width: 100%;
+		margin: 0 auto;
+		background: #fff;
+	}
+
+	/* By Dominik Biedebach @domobch */
+	nav ul {
+		list-style: none;
+		text-align: center;
+	}
+	nav ul li {
+		display: inline-block;
+	}
+	nav ul li a {
+		display: block;
+		padding: 0px;
+		text-decoration: none;
+		color: #aaa;
+		font-weight: 800;
+		margin: 0 10px;
+	}
+	nav ul li a,
+	nav ul li a:after,
+	nav ul li a:before {
+		transition: all .5s;
+	}
+	nav ul li a:hover {
+		color: #555;
+	}
+
+	/* stroke */
+	nav.stroke ul li a,
+	nav.fill ul li a {
+		position: relative;
+	}
+	nav.stroke ul li a:after,
+	nav.fill ul li a:after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 0%;
+		content: '.';
+		color: transparent;
+		background: #333;
+		height: 1px;
+	}
+	nav.stroke ul li a:hover:after {
+		width: 100%;
+	}
+
+    .data-table {
+        border-collapse: collapse;
+    }
+    .border-top {
+        border-top: 1px solid #000;
+    }
+    .border-bottom {
+        border-bottom: 1px solid #000;
+    }
+    .border-left {
+        border-left: 1px solid #000;
+    }
+    .border-right {
+        border-right: 1px solid #000;
+    }
+</style>
+
+<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+
 <body>
-    <h1>Hello World</h1>
-</body>
+	<div class="center-justified" style="width:1000px;"> 
+		<h1>Adversarial Policy Generation in Automated Parking</h1>
+		<h2>Alessandro Pighetti, Francesco Bellotti, Riccardo Berta, Andrea Cavallaro, Luca Lazzaroni, Changjae Oh</h2>
+	</div>
+	<div class="center-justified">
+		<p>
+            Abstract—Automated driving (AD) systems require rigorous
+            testing to validate their robustness and safety in several different
+            operation conditions before real-world deployment. An
+            emerging technology for implementing decision-making (DM) in
+            AD is given by deep reinforcement learning (DRL). Adversarial
+            learning is a method employed to enhance DRL agents by
+            exposing them to critical situations created in simulations by
+            an adversarial agent. A straightforward solution is to train
+            the adversarial model through a reward function which is the
+            opposite of the AD agent one, in order to challenge the AD agent
+            as much as possible. But this solution is simplistic. Particularly,
+            when the AD agent reward function highly penalizes collisions,
+            which is obviously a common case, an adversarial agent would
+            be strongly motivated to crash against the AD vehicle, which
+            may hinder the training for lack of realism. We investigate this
+            issue in a automated parking (AP) application, in which we try
+            to distrupt a parking agent’s behavior through the interaction
+            with an adversarial agent exiting an adjacent parking slot—a
+            common yet under-explored challenge in simulation studies. In
+            this context we propose an adversary reward function that tries
+            to strike a balance between purely adversarial (i.e., disruptive to
+            the target system) and realistic behaviors, significantly reducing
+            collision rates by 25% and avoiding unrealistic maneuvers when
+            compared to a baseline adversarial approach.
+        </p>
+
+
+	<div style="text-align: center;">
+		<img width=1000 src="framework/framework.png">
+	</div>
+
+		<br>
+		<br>
+	<h2 class="Tracking results" style="text-align: left;">MORE RESULTS COMING SOON</h2>	
+
+	<h2 style="text-align: left;">Contacts</h2>
+	<p>
+		If you have any further enquiries, question, or comments, please contact 
+		<a href="mailto:a.pighetti@qmul.ac.uk"><u>a.pighetti@qmul.ac.uk</u></a>.
+	</p>
+
+		</div>
+	<br>
+	<br>
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6de861896b0275cb',m:'ppqRX6tRQH4fUS12qEp4ASn7HTYLZcxczg_G238ujv8-1645031338-0-ASgYPROdw9+o4jFoUNr8Id49tDTtlx5gflbKrAkhfXy2ENQyKulR5gLqJ0Bkdz59YBZm/firsQF0/kj1XO5yyxa5ap7YlCONhhMEOMs9TeGlQzoXAMk4nHBNsniUUaUcRTdaSZhpPQGOa6qn4k9yqil4uoTx4WWfMhmspNBlh1UhCVyy0G3RKeZWSAkf/VI9eQ==',s:[0x1f8bab9e4e,0x98dc696c79],}})();</script></body> 
 </html>
