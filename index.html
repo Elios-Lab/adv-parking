@@ -23,11 +23,16 @@
         }
         .image-container {
             flex: 1;
-            padding:10px;
+            padding:2em 4em 0 4em;
+			text-align: center;
         }
+
+		.caption {
+			padding: 0 10em 0 10em;
+		}
         .text-container {
             flex: 1;
-            padding: 10px;
+            padding: 2em 5em 0 5em;
             text-align: justify;
         }
 
@@ -154,10 +159,9 @@
 		<h3 style="font-weight: 200; font-size: 80%;"><sup>1</sup> University of Genoa, Italy<br><sup>2</sup> Queen Mary University of London, UK<br><sup>3</sup> Idiap	Research Institute, Switzerland<br><sup>4</sup>EPFL, Switzerland</h3>
 	</div>
 	<div class="center-justified">
-		<div class="container">
 			<div class="image-container">
-				<img src="media/graph_abs.svg" alt="Graphical Abstract" style="width:100%; height:auto;">
-				<p class="center" style="text-align: justify;">
+				<img src="media/graph_abs.svg" alt="Graphical Abstract" style="width:60%; height:auto;">
+				<p class="center caption" style="text-align: justify;">
 					<b>Overview of the proposed method.</b> Trajectories of victim (green) and adversarial (red) agents in (a) the baseline and (b) ours. The adversarial agent in (a) actively collides with the victim agent, while the one in (b) blocks the victim from reaching the target parking slot.
 				</p>
 			</div>
@@ -190,7 +194,6 @@
 					compared to a baseline adversarial approach.
 				</p>
 			</div>
-		</div>
 		<br>
 		<br>
 		<h2 style="text-align: left; margin-bottom:10px;">Baseline Adversary</h2>
